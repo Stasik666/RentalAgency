@@ -1,0 +1,20 @@
+1, Bike, BICYCLING, Equipment, Super1000, 1000.0, 2014, 5.2, green mountain
+2, Skies, SKIES, Equipment, SimbleSkies, 200.0, 2010, 1.2, red, 2.4
+3, Scate, SKATES, Equipment, BackToTheFuture, 150.0, 2117, 1.5, blue 0.8
+4, Bike, BICYCLING, Equipment, Super1000, 1000.0, 2014, 5.2, green mountain
+5, Skies, SKIES, Equipment, SimbleSkies, 200.0, 2010, 1.2, red, 2.4
+6, Gloves, SKATES_BICYCLING, Accessories, Defender, 30.5, 2017, 23.0
+7, Protection, SKATES_BICYCLING, Accessories, Degender, 45.3, 2017, 14.5
+8, Helmet, SKATES_BICYCLING, Accessories, Defender, 60.2, 2017, 6, Green
+9, Gloves, SKATES_BICYCLING, Accessories, Defender, 30.5, 2017, 22.0
+10, Protection, SKATES_BICYCLING, Accessories, Degender, 45.3, 2017, 14.5
+11, Helmet, SKATES_BICYCLING, Accessories, Defender, 60.2, 2017, 5, Blue
+12, Gloves, SKATES_BICYCLING, Accessories, Defender, 30.5, 2017, 24.0
+13, Protection, SKATES_BICYCLING, Accessories, Degender, 45.3, 2017, 14.5
+14, Helmet, SKATES_BICYCLING, Accessories, Defender, 60.2, 2017, 4, red
+15, GlovesWinter, SKIES, Accessories, Defender, 42.4, 2017, 23
+16, Skipoles, SKIES, Accessories, Oscar, 40.5, 2017, 1.5
+17, Glasses, SKIES, Accessories, Oscar, 20.3, 2017, Mask
+18, GlovesWinter, SKIES, Accessories, Defender, 42.4, 2017, 22
+19, Skipoles, SKIES, Accessories, Oscar, 38.5, 2017, 1.4
+20, Glasses, SKIES, Accessories, Oscar, 15.6, 2017, Open
