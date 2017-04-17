@@ -1,21 +1,5 @@
 package by.htp.myrentalagency.launch;
 
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
-import java.util.List;
-
-import by.htp.myrentalagency.entity.*;
-import by.htp.myrentalagency.entity.accessories.Glasses;
-import by.htp.myrentalagency.entity.accessories.Gloves;
-import by.htp.myrentalagency.entity.accessories.GlovesWinter;
-import by.htp.myrentalagency.entity.accessories.Helmet;
-import by.htp.myrentalagency.entity.accessories.Protection;
-import by.htp.myrentalagency.entity.accessories.Skipoles;
-import by.htp.myrentalagency.entity.equipment.Bike;
-import by.htp.myrentalagency.entity.equipment.Skate;
-import by.htp.myrentalagency.entity.equipment.Skies;
 import by.htp.myrentalagency.list.RentList;
 import by.htp.myrentalagency.list.RentStation;
 import by.htp.myrentalagency.list.RentUnit;
@@ -26,7 +10,6 @@ import by.htp.myrentalagency.menu.ConsolMenu;
 public class Main {
 
 	public static void main(String[] args){
-		
 		RentStation rent = new RentStation();
 		TenantList tenant = new TenantList(); // The list of the client
 		RentList rentList = new RentList();
