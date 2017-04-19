@@ -9,6 +9,7 @@ public class Protection extends Accessories{
 	public Protection(String[] data){
 		super(Category.valueOf(data[2]), data[4], Double.parseDouble(data[5]), Integer.parseInt(data[6]));
 		size = Double.parseDouble(data[7]);
+		setItemName(data[1]);
 	}
 	
 	public Protection(Category category,String title, double price, int year,double size) {

@@ -9,6 +9,7 @@ public class GlovesWinter extends Accessories{
 	public GlovesWinter(String[] data){
 		super(Category.valueOf(data[2]), data[4], Double.parseDouble(data[5]), Integer.parseInt(data[6]));
 		size = Double.parseDouble(data[7]);
+		setItemName(data[1]);
 	}
 	
 	public GlovesWinter(Category category,String title, double price, int year,int size) {

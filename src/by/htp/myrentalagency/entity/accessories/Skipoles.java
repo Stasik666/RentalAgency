@@ -9,6 +9,7 @@ public class Skipoles extends Accessories{
 	public Skipoles(String[] data){
 		super(Category.valueOf(data[2]), data[4], Double.parseDouble(data[5]), Integer.parseInt(data[6]));
 		length = Double.parseDouble(data[7]);
+		setItemName(data[1]);
 	}
 	
 	public Skipoles(Category category, String title, double price, int year,double length) {

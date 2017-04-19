@@ -12,7 +12,7 @@ public class Bike extends Equipment{
 		super(Category.BICYCLING,data[4], Double.parseDouble(data[5]), Integer.parseInt(data[6]),
 				Double.parseDouble(data[7]),data[8]);
 		type = data[7];
-		setItemName(data[2]);
+		setItemName(data[1]);
 	}
 	
 	public Bike(String title, double price, int year,

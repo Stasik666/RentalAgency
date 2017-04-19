@@ -12,7 +12,7 @@ public class Skies extends Equipment{
 		super(Category.BICYCLING,data[4], Double.parseDouble(data[5]), Integer.parseInt(data[6]),
 				Double.parseDouble(data[7]),data[8]);
 		length = Double.parseDouble(data[9]);
-		setItemName(data[2]);
+		setItemName(data[1]);
 	}
 	
 	public Skies(String title, double price, int year,

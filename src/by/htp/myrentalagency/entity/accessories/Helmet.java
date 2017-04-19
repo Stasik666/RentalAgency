@@ -11,6 +11,7 @@ public class Helmet extends Accessories{
 		super(Category.valueOf(data[2]), data[4], Double.parseDouble(data[5]), Integer.parseInt(data[6]));
 		size = Double.parseDouble(data[7]);
 		color = data[8];
+		setItemName(data[1]);
 	}
 	
 	public Helmet(Category category,String title, double price, int year,int size,String color) {
