@@ -4,4 +4,9 @@
 		xmlns:tns="http://www.example.org/AvailableEquipmentXMLSchema" 
 		elementFormDefault="qualified">
 		
+		<complexType name="Product">
+			<sequence>
+				
+			</sequence>
+		</complexType>
 </schema>
