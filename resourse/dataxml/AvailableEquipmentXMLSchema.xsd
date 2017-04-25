@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<schema xmlns="http://www.w3.org/2001/XMLSchema" 
-		targetNamespace="http://www.example.org/AvailableEquipmentXMLSchema" 
-		xmlns:tns="http://www.example.org/AvailableEquipmentXMLSchema" 
-		elementFormDefault="qualified">
-		
-		<complexType name="Product">
+<schema 
+xmlns="http://www.w3.org/2001/XMLSchema" 
+targetNamespace="http://www.example.org/AvailableEquipmentXMLSchema" 
+xmlns:tns="http://www.example.org/AvailableEquipmentXMLSchema" 
+elementFormDefault="qualified">
+
+	<element name="products">
+		<complexType>
 			<sequence>
-				
+				<element ref="tns:product" minOccurs="0" maxOccurs="unbounded"/>
 			</sequence>
 		</complexType>
+	</element>
+	<complexType name="product">
+		<sequence>
+				
+		</sequence>
+	</complexType>
 </schema>
