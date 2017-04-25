@@ -16,12 +16,19 @@ public class Main {
 		RentUnit rentUnit = new RentUnit();
 		AddRent addRent = new AddRent(rentList,tenant,rent,rentUnit);
 		
-		String availableEquipment = "src/data/AvailableEquipment";
-		String clientData = "src/data/ClientData";
-		
-		tenant.initializeListFromFile(clientData);
-		rent.initializeListFromFile(availableEquipment);
 		ConsolMenu menu = new ConsolMenu(addRent);
+		
+		
+		
+		
+		
+		
+//		String availableEquipment = "src/data/AvailableEquipment";
+//		String clientData = "src/data/ClientData";
+//		
+//		tenant.initializeListFromFile(clientData);
+//		rent.initializeListFromFile(availableEquipment);
+//		ConsolMenu menu = new ConsolMenu(addRent);
 		
 	}
 	
