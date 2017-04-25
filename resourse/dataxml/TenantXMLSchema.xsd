@@ -1,8 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-	targetNamespace="http://www.myschema.by/FamilySchema" xmlns:xl="http://www.myschema.by/FamilySchema"
-	elementFormDefault="qualified">
-	
-	<xs:complexType name=""
-	
+<xs:schema 
+xmlns:xs="http://www.w3.org/2001/XMLSchema"
+targetNamespace="http://www.myschema.by/TenantXMLSchema" 
+xmlns:xl="http://www.myschema.by/TenantXMLSchema"
+elementFormDefault="qualified">
+
+	<xs:element name="tenants">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="tenant" type="xl:Tenant"  maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:complexType name="Tenant">			
+		<xs:sequence>
+			<xs:element name="id" type="xs:positiveInteger" />
+			<xs:element name="name" type="xs:string"/>
+			<xs:element name="dateBirth" type="xs:string"/>
+			<xs:element name="address" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
 </xs:schema>

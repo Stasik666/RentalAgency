@@ -1,1 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<tenants 
+xmlns="http://www.myschema.by/TenantXMLSchema"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.myschema.by/TenantXMLSchema TenantXMLSchema.xsd">
+		<tenant>
+			<id>1</id>
+			<name>Dart Vaider</name>
+			<dateBirth>17.02.2154</dateBirth>
+			<address>Star of Death</address>
+		</tenant>
+		<tenant>
+			<id>2</id>		
+			<name>Micky Mouse</name>
+			<dateBirth>17.02.1915</dateBirth>
+			<address>Disney</address>
+		</tenant>			
+		<tenant>
+			<id>3</id>
+			<name>Lenin Vladimir</name>
+			<dateBirth>17.02.1865</dateBirth>
+			<address>Mavzoley</address>
+		</tenant>
+</tenants>

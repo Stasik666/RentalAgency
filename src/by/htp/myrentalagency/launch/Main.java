@@ -1,5 +1,6 @@
 package by.htp.myrentalagency.launch;
 
+import by.htp.myrentalagency.file.WorkXML;
 import by.htp.myrentalagency.list.RentList;
 import by.htp.myrentalagency.list.RentStation;
 import by.htp.myrentalagency.list.RentUnit;
@@ -16,26 +17,30 @@ public class Main {
 		RentUnit rentUnit = new RentUnit();
 		AddRent addRent = new AddRent(rentList,tenant,rent,rentUnit);
 		
+		WorkXML.initializationTenantXML(tenant);
+		
+		
+		
+		
+		
+		
+		/*initialization from file
+		
+		String availableEquipment = "resourse/data/AvailableEquipment";
+		String clientData = "resourse/data/ClientData";
+		tenant.initializeListFromFile(clientData);
+		rent.initializeListFromFile(availableEquipment);
 		ConsolMenu menu = new ConsolMenu(addRent);
-		
-		
-		
-		
-		
-		
-//		String availableEquipment = "src/data/AvailableEquipment";
-//		String clientData = "src/data/ClientData";
-//		
-//		tenant.initializeListFromFile(clientData);
-//		rent.initializeListFromFile(availableEquipment);
-//		ConsolMenu menu = new ConsolMenu(addRent);
+		*/
 		
 	}
 	
 	
 		
-
-		/*rent.add(new Bike("Super1000",1000.0,2014,5.2,"green","mountain"));
+			
+		/* manual initialization
+		
+		rent.add(new Bike("Super1000",1000.0,2014,5.2,"green","mountain"));
 		rent.add(new Skies("SimbleSkies",200,2010,1.2,"red",2.4));
 		rent.add(new Skate("BackToTheFuture",150,2117,1.5,"blue",0.8));
 		rent.add(new Bike("Super1000",1000.0,2014,5.2,"green","mountain"));
@@ -61,9 +66,7 @@ public class Main {
 		rent.add(new Glasses(Category.SKIES,"Oscar",15.6,2017,"Open"));
 		
 		//rent.print();
-		//tenant.print();
-		
-		
+		//tenant.print();		
 		*/
-	}
+}
 
