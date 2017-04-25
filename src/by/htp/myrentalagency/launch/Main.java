@@ -19,7 +19,7 @@ public class Main {
 		
 		WorkXML.initializationTenantXML(tenant);
 		
-		
+		ConsolMenu menu = new ConsolMenu(addRent);
 		
 		
 		
