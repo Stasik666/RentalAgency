@@ -14,7 +14,6 @@ elementFormDefault="qualified">
 	</xs:element>
 	<xs:complexType name="Tenant">			
 		<xs:sequence>
-			<xs:element name="id" type="xs:positiveInteger" />
 			<xs:element name="name" type="xs:string"/>
 			<xs:element name="dateBirth" type="xs:string"/>
 			<xs:element name="address" type="xs:string"/>

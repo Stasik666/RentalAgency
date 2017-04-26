@@ -12,9 +12,40 @@ elementFormDefault="qualified">
 			</sequence>
 		</complexType>
 	</element>
-	<complexType name="product">
+	<element name="product" type="tns:ProductType" abstract="true"></element>
+	<element name="accessories" type="tns:AccessoriesType" abstract="true" substitutionGroup="tns:product"></element>
+	<element name="equipment" type="tns:EquipmentType" abstract="true" substitutionGroup="tns:product"></element>
+	
+	
+	<complexType name="ProductType">
 		<sequence>
-				
+				<element name="name" type="string" />
+				<element name="itemname" type="string" />
+				<element name="category" type="tns:category" />
+				<element name="itemtype" type="string" />
+				<element name="title" type="string" />
+				<element name="price" type="double" />
+				<element name="year" type="int" />
 		</sequence>
 	</complexType>
+	
+	<complexType name="EquipmentType">
+		<complexContent>
+			<extension base="tns:ProductType">
+				<sequence>
+					<element name="weight" type="double"/>
+					<element name="color" type="string"/>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	
+	<complexType name="AccessoriesType">
+		<complexContent>
+			<extension base="tns:ProductType">
+			
+			</extension>
+		</complexContent>
+	</complexType>
+	
 </schema>
