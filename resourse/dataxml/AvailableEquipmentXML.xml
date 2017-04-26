@@ -58,20 +58,103 @@ xsi:schemaLocation="http://www.myschema.by/AvailableEquipmentXMLSchema Available
 	</gloves>
 	<protection>
 		<category>SKATES_BICYCLING</category>
-		<
+		<title>Defender</title>
+		<price>45.3</price>
+		<year>2017</year>
+		<size>14.5</size>
 	</protection>
-Id=7, Protection, Category=SKATES_BICYCLING, ItemType=Accessories, Title=Degender, Price=45.3, Year=2017, Size=14.5
-Id=8, Helmet, Category=SKATES_BICYCLING, ItemType=Accessories, Title=Defender, Price=60.2, Year=2017, Size=6, Color=Green
-Id=9, Gloves, Category=SKATES_BICYCLING, ItemType=Accessories, Title=Defender, Price=30.5, Year=2017, Size = 22.0
-Id=10, Protection, Category=SKATES_BICYCLING, ItemType=Accessories, Title=Degender, Price=45.3, Year=2017, Size=14.5
-Id=11, Helmet, Category=SKATES_BICYCLING, ItemType=Accessories, Title=Defender, Price=60.2, Year=2017, Size=5, Color=Blue
-Id=12, Gloves, Category=SKATES_BICYCLING, ItemType=Accessories, Title=Defender, Price=30.5, Year=2017, Size = 24.0
-Id=13, Protection, Category=SKATES_BICYCLING, ItemType=Accessories, Title=Degender, Price=45.3, Year=2017, Size=14.5
-Id=14, Helmet, Category=SKATES_BICYCLING, ItemType=Accessories, Title=Defender, Price=60.2, Year=2017, Size=4, Color=red
-Id=15, GlovesWinter, Category=SKIES, ItemType=Accessories, Title=Defender, Price=42.4, Year=2017, Size=23
-Id=16, Skipoles, Category=SKIES, ItemType=Accessories, Title=Oscar, Price=40.5, Year=2017, Length=1.5
-Id=17, Glasses, Category=SKIES, ItemType=Accessories, Title=Oscar, Price=20.3, Year=2017, Type=Mask
-Id=18, GlovesWinter, Category=SKIES, ItemType=Accessories, Title=Defender, Price=42.4, Year=2017, Size=22
-Id=19, Skipoles, Category=SKIES, ItemType=Accessories, Title=Oscar, Price=38.5, Year=2017, Length=1.4
-Id=20, Glasses, Category=SKIES, ItemType=Accessories, Title=Oscar, Price=15.6, Year=2017, Type=Open
+	<helmet>
+		<category>SKATES_BICYCLING</category>
+		<title>Defender</title>
+		<price>60.2</price>
+		<year>2017</year>
+		<size>6</size>
+		<color>green</color>
+	</helmet>
+	<gloves>
+		<category>SKATES_BICYCLING</category>
+		<title>Defender</title>
+		<price>30.5</price>
+		<year>2017</year>
+		<size>22.0</size>
+	</gloves>
+	<protection>
+		<category>SKATES_BICYCLING</category>
+		<title>Defender</title>
+		<price>45.3</price>
+		<year>2017</year>
+		<size>13.5</size>
+	</protection>
+	<helmet>
+		<category>SKATES_BICYCLING</category>
+		<title>Defender</title>
+		<price>60.2</price>
+		<year>2017</year>
+		<size>5</size>
+		<color>blue</color>
+	</helmet>
+	<gloves>
+		<category>SKATES_BICYCLING</category>
+		<title>Defender</title>
+		<price>30.5</price>
+		<year>2017</year>
+		<size>24.0</size>
+	</gloves>
+	<protection>
+		<category>SKATES_BICYCLING</category>
+		<title>Defender</title>
+		<price>45.3</price>
+		<year>2017</year>
+		<size>14.0</size>
+	</protection>
+	<helmet>
+		<category>SKATES_BICYCLING</category>
+		<title>Defender</title>
+		<price>60.2</price>
+		<year>2017</year>
+		<size>4</size>
+		<color>red</color>
+	</helmet>
+	<gloveswinter>
+		<category>SKIES</category>
+		<title>Defender</title>
+		<price>42.3</price>
+		<year>2017</year>
+		<size>23</size>
+	</gloveswinter>
+	<skipoles>
+		<category>SKIES</category>
+		<title>Oscar</title>
+		<price>40.5</price>
+		<year>2017</year>
+		<length>1.5</length>
+	</skipoles>
+	<glasses>
+		<category>SKIES</category>
+		<title>Oscar</title>
+		<price>20.3</price>
+		<year>2017</year>
+		<type>Mask</type>
+	</glasses>
+	<gloveswinter>
+		<category>SKIES</category>
+		<title>Defender</title>
+		<price>42.3</price>
+		<year>2017</year>
+		<size>22</size>
+	</gloveswinter>
+	<skipoles>
+		<category>SKIES</category>
+		<title>Oscar</title>
+		<price>38.5</price>
+		<year>2017</year>
+		<length>1.4</length>
+	</skipoles>
+	<glasses>
+		<category>SKIES</category>
+		<title>Oscar</title>
+		<price>15.6</price>
+		<year>2017</year>
+		<type>Open</type>
+	</glasses>
 </products>
