@@ -11,6 +11,7 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
 import by.htp.myrentalagency.entity.Tenant;
+import by.htp.myrentalagency.list.RentStation;
 import by.htp.myrentalagency.list.TenantList;
 
 public class WorkXML {
@@ -37,4 +38,27 @@ public class WorkXML {
 	         e.printStackTrace();
 	     }
 	}
+	
+	public static void initializationProductXML(RentStation rent){
+		 try {	
+			 File inputFile = new File("resourse/dataxml/AvailableEquipmentXML.xml");
+	         DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
+	         DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
+	         Document doc = dBuilder.parse(inputFile);
+	         doc.getDocumentElement().normalize();
+	         NodeList nList = doc.getElementsByTagName("product");
+	         for (int temp = 0; temp < nList.getLength(); temp++) {
+	        	 Node nNode = nList.item(temp);
+	             if (nNode.getNodeType() == Node.ELEMENT_NODE) {
+	            	 Element eElement = (Element) nNode;
+	            	
+	             }
+	         }
+	     } 
+		 catch (Exception e) {
+	         e.printStackTrace();
+	     }
+	}
+	
+	
 }

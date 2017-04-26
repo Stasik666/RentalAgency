@@ -18,6 +18,7 @@ public class Main {
 		AddRent addRent = new AddRent(rentList,tenant,rent,rentUnit);
 		
 		WorkXML.initializationTenantXML(tenant);
+		WorkXML.initializationProductXML(rent);
 		
 		ConsolMenu menu = new ConsolMenu(addRent);
 		
