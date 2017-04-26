@@ -11,6 +11,7 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
 import by.htp.myrentalagency.entity.Tenant;
+import by.htp.myrentalagency.entity.equipment.Bike;
 import by.htp.myrentalagency.list.RentStation;
 import by.htp.myrentalagency.list.TenantList;
 
@@ -41,17 +42,23 @@ public class WorkXML {
 	
 	public static void initializationProductXML(RentStation rent){
 		 try {	
+			 
 			 File inputFile = new File("resourse/dataxml/AvailableEquipmentXML.xml");
 	         DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
 	         DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
 	         Document doc = dBuilder.parse(inputFile);
 	         doc.getDocumentElement().normalize();
-	         NodeList nList = doc.getElementsByTagName("product");
+	         NodeList nList = doc.getElementsByTagName("bike");
 	         for (int temp = 0; temp < nList.getLength(); temp++) {
 	        	 Node nNode = nList.item(temp);
 	             if (nNode.getNodeType() == Node.ELEMENT_NODE) {
 	            	 Element eElement = (Element) nNode;
-	            	
+	            	rent.add(new Bike(eElement.getElementsByTagName("title").item(0).getTextContent(),
+	            					  Double.parseDouble(eElement.getElementsByTagName("price").item(0).getTextContent()),
+   			 			              Integer.parseInt(eElement.getElementsByTagName("year").item(0).getTextContent()),
+   			 			              Double.parseDouble(eElement.getElementsByTagName("weight").item(0).getTextContent()),
+         			 			      eElement.getElementsByTagName("color").item(0).getTextContent(),
+         			 			      eElement.getElementsByTagName("type").item(0).getTextContent()));    	
 	             }
 	         }
 	     } 
