@@ -17,6 +17,8 @@ public class Main {
 		RentUnit rentUnit = new RentUnit();
 		AddRent addRent = new AddRent(rentList,tenant,rent,rentUnit);
 		
+		//initialization from XML file
+		
 		WorkXML.initializationTenantXML(tenant);
 		WorkXML.initializationProductXML(rent);
 		

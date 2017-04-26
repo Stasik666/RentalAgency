@@ -52,7 +52,7 @@ public class WorkXML {
 	         for (int temp = 0; temp < nList.getLength(); temp++) {
 	        	 Node nNode = nList.item(temp);
 	             if (nNode.getNodeType() == Node.ELEMENT_NODE) {
-	            	 Element eElement = (Element) nNode;
+	            	Element eElement = (Element) nNode;
 	            	rent.add(new Bike(eElement.getElementsByTagName("title").item(0).getTextContent(),
 	            					  Double.parseDouble(eElement.getElementsByTagName("price").item(0).getTextContent()),
    			 			              Integer.parseInt(eElement.getElementsByTagName("year").item(0).getTextContent()),
