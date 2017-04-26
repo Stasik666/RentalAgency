@@ -22,6 +22,9 @@ elementFormDefault="qualified">
 	<element name="glasses" type="tns:GlassesType" substitutionGroup="tns:product"></element>
 	<element name="gloves" type="tns:GlovesType" substitutionGroup="tns:product"></element>
 	<element name="gloveswinter" type="tns:GlovesWinterType" substitutionGroup="tns:product"></element>
+	<element name="helmet" type="tns:HelmetType" substitutionGroup="tns:product"></element>
+	<element name="protection" type="tns:ProtectionType" substitutionGroup="tns:product"></element>
+	<element name="skipoles" type="tns:SkipolesType" substitutionGroup="tns:product"></element>
 	
 	<complexType name="ProductType">
 		<sequence>
@@ -34,6 +37,14 @@ elementFormDefault="qualified">
 				<element name="year" type="int" />
 		</sequence>
 	</complexType>
+	<simpleType name="category">
+		<restriction base="string">
+			<enumeration value="BICYCLING"/>
+			<enumeration value="SKIES"/>
+			<enumeration value="SKATES"/>
+			<enumeration value="SKATES_BICYCLING"/>
+		</restriction>
+	</simpleType>
 	<complexType name="EquipmentType">
 		<complexContent>
 			<extension base="tns:ProductType">
