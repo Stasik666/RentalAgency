@@ -12,10 +12,16 @@ elementFormDefault="qualified">
 			</sequence>
 		</complexType>
 	</element>
+	
 	<element name="product" type="tns:ProductType" abstract="true"></element>
 	<element name="accessories" type="tns:AccessoriesType" abstract="true" substitutionGroup="tns:product"></element>
 	<element name="equipment" type="tns:EquipmentType" abstract="true" substitutionGroup="tns:product"></element>
-	
+	<element name="bike" type="tns:BikeType" substitutionGroup="tns:product"></element>
+	<element name="skate" type="tns:SkateType" substitutionGroup="tns:product"></element>
+	<element name="skies" type="tns:SkiesType" substitutionGroup="tns:product"></element>
+	<element name="glasses" type="tns:GlassesType" substitutionGroup="tns:product"></element>
+	<element name="gloves" type="tns:GlovesType" substitutionGroup="tns:product"></element>
+	<element name="gloveswinter" type="tns:GlovesWinterType" substitutionGroup="tns:product"></element>
 	
 	<complexType name="ProductType">
 		<sequence>
@@ -28,7 +34,6 @@ elementFormDefault="qualified">
 				<element name="year" type="int" />
 		</sequence>
 	</complexType>
-	
 	<complexType name="EquipmentType">
 		<complexContent>
 			<extension base="tns:ProductType">
@@ -39,11 +44,91 @@ elementFormDefault="qualified">
 			</extension>
 		</complexContent>
 	</complexType>
-	
 	<complexType name="AccessoriesType">
 		<complexContent>
 			<extension base="tns:ProductType">
-			
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="BikeType">
+		<complexContent>
+			<extension base="tns:EquipmentType">
+				<sequence>
+					<element name="type" type="string"/>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="SkateType">
+		<complexContent>
+			<extension base="tns:EquipmentType">
+				<sequence>
+					<element name="length" type="double"/>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="SkiesType">
+		<complexContent>
+			<extension base="tns:EquipmentType">
+				<sequence>
+					<element name="length" type="double"/>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="GlassesType">
+		<complexContent>
+			<extension base="tns:AccessoriesType">
+				<sequence>
+					<element name="type" type="string"/>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="GlovesType">
+		<complexContent>
+			<extension base="tns:AccessoriesType">
+				<sequence>
+					<element name="size" type="double"/>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="GlovesWinterType">
+		<complexContent>
+			<extension base="tns:AccessoriesType">
+				<sequence>
+					<element name="size" type="double"/>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="HelmetType">
+		<complexContent>
+			<extension base="tns:AccessoriesType">
+				<sequence>
+					<element name="size" type="double"/>
+					<element name="color" type="string"/>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="ProtectionType">
+		<complexContent>
+			<extension base="tns:AccessoriesType">
+				<sequence>
+					<element name="size" type="double"/>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="SkipolesType">
+		<complexContent>
+			<extension base="tns:AccessoriesType">
+				<sequence>
+					<element name="length" type="double"/>
+				</sequence>
 			</extension>
 		</complexContent>
 	</complexType>
