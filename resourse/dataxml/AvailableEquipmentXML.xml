@@ -1,1 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<products 
+xmlns="http://www.myschema.by/AvailableEquipmentXMLSchema"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.myschema.by/AvailableEquipmentXMLSchema AvailableEquipmentXMLSchema.xsd"
+>
+	<bike>
+		<category>BICYCLING</category>
+		<title>Super1000</title>
+		<price>1000.0</price>
+		<year>2014</year>
+		<weight>5.2</weight>
+		<color>green</color>
+		<type>mountain</type>
+	</bike>
+	<skies>
+		<category>SKIES</category>
+		<title>SimbleSkies</title>
+		<price>200.0</price>
+		<year>2010</year>
+		<weight>1.2</weight>
+		<color>red</color>
+		<length>2.4</length>
+	</skies>
+	<skate>
+		<category>SKATES</category>
+		<title>BackToTheFuture</title>
+		<price>150.0</price>
+		<year>2117</year>
+		<weight>1.5</weight>
+		<color>blue</color>
+		<length>0.8</length>
+	</skate>
+	<bike>
+		<category>BICYCLING</category>
+		<title>Puper100</title>
+		<price>1100.0</price>
+		<year>2015</year>
+		<weight>5.1</weight>
+		<color>blue</color>
+		<type>family</type>
+	</bike>
+	<skies>
+		<category>SKIES</category>
+		<title>HarerSkies</title>
+		<price>215.0</price>
+		<year>2016</year>
+		<weight>1.34</weight>
+		<color>violet</color>
+		<length>2.56</length>
+	</skies>
+	<gloves>
+		<category>SKATES_BICYCLING</category>
+		<title>Defender</title>
+		<price>30.5</price>
+		<year>2017</year>
+		<size>23.0</size>
+	</gloves>
+	<protection>
+		<category>SKATES_BICYCLING</category>
+		<
+	</protection>
+Id=7, Protection, Category=SKATES_BICYCLING, ItemType=Accessories, Title=Degender, Price=45.3, Year=2017, Size=14.5
+Id=8, Helmet, Category=SKATES_BICYCLING, ItemType=Accessories, Title=Defender, Price=60.2, Year=2017, Size=6, Color=Green
+Id=9, Gloves, Category=SKATES_BICYCLING, ItemType=Accessories, Title=Defender, Price=30.5, Year=2017, Size = 22.0
+Id=10, Protection, Category=SKATES_BICYCLING, ItemType=Accessories, Title=Degender, Price=45.3, Year=2017, Size=14.5
+Id=11, Helmet, Category=SKATES_BICYCLING, ItemType=Accessories, Title=Defender, Price=60.2, Year=2017, Size=5, Color=Blue
+Id=12, Gloves, Category=SKATES_BICYCLING, ItemType=Accessories, Title=Defender, Price=30.5, Year=2017, Size = 24.0
+Id=13, Protection, Category=SKATES_BICYCLING, ItemType=Accessories, Title=Degender, Price=45.3, Year=2017, Size=14.5
+Id=14, Helmet, Category=SKATES_BICYCLING, ItemType=Accessories, Title=Defender, Price=60.2, Year=2017, Size=4, Color=red
+Id=15, GlovesWinter, Category=SKIES, ItemType=Accessories, Title=Defender, Price=42.4, Year=2017, Size=23
+Id=16, Skipoles, Category=SKIES, ItemType=Accessories, Title=Oscar, Price=40.5, Year=2017, Length=1.5
+Id=17, Glasses, Category=SKIES, ItemType=Accessories, Title=Oscar, Price=20.3, Year=2017, Type=Mask
+Id=18, GlovesWinter, Category=SKIES, ItemType=Accessories, Title=Defender, Price=42.4, Year=2017, Size=22
+Id=19, Skipoles, Category=SKIES, ItemType=Accessories, Title=Oscar, Price=38.5, Year=2017, Length=1.4
+Id=20, Glasses, Category=SKIES, ItemType=Accessories, Title=Oscar, Price=15.6, Year=2017, Type=Open
+</products>
