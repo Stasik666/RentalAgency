@@ -14,7 +14,7 @@ public abstract class Accessories extends Product{
 	}
 	
 
-
+	
 	@Override
 	public String toString() {
 		return super.toString();

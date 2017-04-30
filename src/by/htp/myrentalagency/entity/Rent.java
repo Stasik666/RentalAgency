@@ -70,7 +70,7 @@ public class Rent {
 	public void setDate(Date date) {
 		this.date = date;
 	}
-
+	
 	@Override
 	public String toString() {
 		return "Rent" + " " + id + " tenant=" + tenant.getName() + " dateBirth= " + tenant.getDateBirth() + " Address= " + tenant.getAddress() + "\n" + 
