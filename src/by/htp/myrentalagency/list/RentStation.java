@@ -23,8 +23,7 @@ public class RentStation implements Lists{
 		return units;
 	}
 	
-	@Override
-	public void initializeListFromFile(String path) {
+	public void initProductFile(String path) {
 		BufferedReader readFromFile = null;
 		String line;
 		try {

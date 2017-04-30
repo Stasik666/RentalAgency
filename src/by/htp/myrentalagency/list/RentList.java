@@ -20,8 +20,7 @@ public class RentList implements Lists{
 		this.units = units;
 	}
 	
-	@Override
-	public void initializeListFromFile(String path) {
+	public void initRentFile(String path) {
 	}	
 	public void add(Rent newRent){
 		int emptyCount=0;

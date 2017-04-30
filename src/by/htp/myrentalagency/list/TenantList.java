@@ -25,8 +25,7 @@ public class TenantList implements Lists{
 		this.tenantList = tenantList;
 	}
 	
-	@Override
-	public void initializeListFromFile(String path) {
+	public void initTenantFile(String path) {
 		
 		BufferedReader readFromFile = null;
 		String line;

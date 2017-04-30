@@ -31,8 +31,15 @@ public class Tenant {
 		name = dataTenant[1] ;
 		dateBirth = dataTenant[2];
 		address = dataTenant[3];
-	
+		equipment = new Equipment[numberOfItem];
+		accessories = new Accessories[10];
 		
+	}
+
+	public Tenant() {
+		id=++tenantCount;
+		equipment = new Equipment[numberOfItem];
+		accessories = new Accessories[10];
 	}
 	
 	public void addAccessories(Accessories item){  
