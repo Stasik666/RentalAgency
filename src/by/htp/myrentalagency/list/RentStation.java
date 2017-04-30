@@ -114,7 +114,6 @@ public class RentStation implements Lists{
 				}
 			}
 		}
-		WorkFile.writeToFile("src/data/AvailableEquipment",units );
 	}
 	
 

@@ -1,5 +1,9 @@
 package by.htp.myrentalagency.launch;
 
+import by.htp.myrentalagency.entity.Category;
+import by.htp.myrentalagency.entity.Tenant;
+import by.htp.myrentalagency.entity.accessories.*;
+import by.htp.myrentalagency.entity.equipment.*;
 import by.htp.myrentalagency.file.DOMParserXML;
 import by.htp.myrentalagency.list.RentList;
 import by.htp.myrentalagency.list.RentStation;
@@ -17,16 +21,16 @@ public class Main {
 		RentUnit rentUnit = new RentUnit();
 		AddRent addRent = new AddRent(rentList,tenant,rent,rentUnit);
 		
-		//initialization from XML file
-		
-		DOMParserXML.initializationTenantXML(tenant);
-		DOMParserXML.initializationProductXML(rent);
-		
-		ConsolMenu menu = new ConsolMenu(addRent);
-		
-		
+//		//initialization from XML file
+//		
+//		DOMParserXML.initializationTenantXML(tenant);
+//		DOMParserXML.initializationProductXML(rent);
+//		
+//		ConsolMenu menu = new ConsolMenu(addRent);
 		
 		
+		
+	
 		/*initialization from file
 		
 		String availableEquipment = "resourse/data/AvailableEquipment";
@@ -36,12 +40,12 @@ public class Main {
 		ConsolMenu menu = new ConsolMenu(addRent);
 		*/
 		
-	}
+	
 	
 	
 		
 			
-		/* manual initialization
+		// manual initialization
 		
 		rent.add(new Bike("Super1000",1000.0,2014,5.2,"green","mountain"));
 		rent.add(new Skies("SimbleSkies",200,2010,1.2,"red",2.4));
@@ -68,8 +72,8 @@ public class Main {
 		rent.add(new Skipoles(Category.SKIES,"Oscar",38.5,2017,1.4));
 		rent.add(new Glasses(Category.SKIES,"Oscar",15.6,2017,"Open"));
 		
-		//rent.print();
-		//tenant.print();		
-		*/
+		ConsolMenu menu = new ConsolMenu(addRent);
+			
+	}
 }
 
