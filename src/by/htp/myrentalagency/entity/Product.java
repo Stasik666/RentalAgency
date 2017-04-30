@@ -2,7 +2,7 @@ package by.htp.myrentalagency.entity;
 
 public abstract class Product {
 	
-	private static int itemCount;
+	private  static int itemCount;
 	
 	private final int id;
 	private Category category;
@@ -42,10 +42,6 @@ public abstract class Product {
 
 	public static int getItemCount() {
 		return itemCount;
-	}
-
-	public static void setItemCount(int itemCount) {
-		Product.itemCount = itemCount;
 	}
 
 	public String getTitle() {

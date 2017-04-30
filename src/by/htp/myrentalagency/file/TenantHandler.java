@@ -21,7 +21,7 @@ public class TenantHandler extends DefaultHandler{
 	}
 
 	public void startDocument() throws SAXException {
-		ConsolMenu.consolMessage("Parsing started.");
+		ConsolMenu.consolMessage("Parsing the list of clients started.");
 	}
 
 	public void endDocument() throws SAXException {

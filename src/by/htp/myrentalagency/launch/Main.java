@@ -1,10 +1,5 @@
 package by.htp.myrentalagency.launch;
 
-import by.htp.myrentalagency.entity.Category;
-import by.htp.myrentalagency.entity.Tenant;
-import by.htp.myrentalagency.entity.accessories.*;
-import by.htp.myrentalagency.entity.equipment.*;
-import by.htp.myrentalagency.file.DOMReaderXML;
 import by.htp.myrentalagency.file.SAXReaderXML;
 import by.htp.myrentalagency.list.RentList;
 import by.htp.myrentalagency.list.RentStation;
@@ -16,10 +11,10 @@ import by.htp.myrentalagency.menu.ConsolMenu;
 public class Main {
 
 	public static void main(String[] args){
-		RentStation rent = new RentStation();
+		RentStation rent = new RentStation(); // The list of available equipment
 		TenantList tenant = new TenantList(); // The list of the client
-		RentList rentList = new RentList();
-		RentUnit rentUnit = new RentUnit();
+		RentList rentList = new RentList(); // Deals list
+		RentUnit rentUnit = new RentUnit(); // The list of leased equipment
 		AddRent addRent = new AddRent(rentList,tenant,rent,rentUnit);
 		
 		//initialization from XML file(DOM)
@@ -29,6 +24,7 @@ public class Main {
 //		
 //		ConsolMenu menu = new ConsolMenu(addRent);
 		
+		
 		//initialization from XML file(SAX)
 		
 		SAXReaderXML.initTenantXML(tenant);
@@ -37,7 +33,6 @@ public class Main {
 		ConsolMenu menu = new ConsolMenu(addRent);
 		
 		
-	
 		/*initialization from file
 		
 		String availableEquipment = "resourse/data/AvailableEquipment";
@@ -47,11 +42,7 @@ public class Main {
 		ConsolMenu menu = new ConsolMenu(addRent);
 		*/
 		
-	
-	
-	
 		
-			
 		// manual initialization
 		
 //		rent.add(new Bike("Super1000",1000.0,2014,5.2,"green","mountain"));

@@ -6,7 +6,6 @@ import java.io.IOException;
 
 import by.htp.myrentalagency.entity.*;
 import by.htp.myrentalagency.entity.equipment.*;
-import by.htp.myrentalagency.file.WorkFile;
 import by.htp.myrentalagency.entity.accessories.*;
 import by.htp.myrentalagency.logic.Lists;
 import by.htp.myrentalagency.menu.ConsolMenu;
