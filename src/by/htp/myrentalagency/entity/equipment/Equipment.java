@@ -35,7 +35,7 @@ public abstract class Equipment extends Product{
 
 	@Override
 	public String toString() {
-		return super.toString() + " Weight=" + weight + ", Color=" + color + ", ";
+		return super.toString() + ", Weight=" + weight + ", Color=" + color;
 	}
 	
 }

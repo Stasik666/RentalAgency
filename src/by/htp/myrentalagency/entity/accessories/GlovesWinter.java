@@ -12,7 +12,7 @@ public class GlovesWinter extends Accessories{
 		setItemName(data[1]);
 	}
 	
-	public GlovesWinter(Category category,String title, double price, int year,int size) {
+	public GlovesWinter(Category category,String title, double price, int year,double size) {
 		super(category,title, price, year);
 		this.size = size;
 		this.setItemName("GlovesWinter");

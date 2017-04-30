@@ -34,7 +34,7 @@ public class Bike extends Equipment{
 
     @Override
 	public String toString() {
-		return  super.toString() + " Type=" + type;
+		return  super.toString() + ", Type=" + type;
 	}
 	
 }

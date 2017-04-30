@@ -14,7 +14,7 @@ public class Helmet extends Accessories{
 		setItemName(data[1]);
 	}
 	
-	public Helmet(Category category,String title, double price, int year,int size,String color) {
+	public Helmet(Category category,String title, double price, int year,double size,String color) {
 		super(category,title, price, year);
 		this.size = size;
 		this.color = color;

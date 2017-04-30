@@ -19,7 +19,7 @@ public class Skate extends Equipment{
 			double weight, String color, double length) {
 		super(Category.SKATES, title, price, year, weight,color);
 		this.length = length;
-		this.setItemName("Scate");
+		this.setItemName("Skate");
 	}
 	
 	public double getLength() {
@@ -31,7 +31,7 @@ public class Skate extends Equipment{
 
 	@Override
 	public String toString() {
-		return super.toString() + " Length=" + length;
+		return super.toString() + ", Length=" + length;
 	}
 
 }

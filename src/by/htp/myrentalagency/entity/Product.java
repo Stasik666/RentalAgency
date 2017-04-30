@@ -82,7 +82,7 @@ public abstract class Product {
 
 	@Override
 	public String toString() {
-		return "Id=" + id + ", ItemName=" + itemName + ", Category=" + category + ", ItemType=" + itemType + ", Title=" + title + ", Price=" + price + ", Year=" + year + ", ";
+		return "Id=" + id + ", ItemName=" + itemName + ", Category=" + category + ", ItemType=" + itemType + ", Title=" + title + ", Price=" + price + ", Year=" + year;
 	}
 	
 }

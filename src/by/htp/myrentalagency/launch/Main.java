@@ -1,6 +1,6 @@
 package by.htp.myrentalagency.launch;
 
-import by.htp.myrentalagency.file.WorkXML;
+import by.htp.myrentalagency.file.DOMParserXML;
 import by.htp.myrentalagency.list.RentList;
 import by.htp.myrentalagency.list.RentStation;
 import by.htp.myrentalagency.list.RentUnit;
@@ -19,8 +19,8 @@ public class Main {
 		
 		//initialization from XML file
 		
-		WorkXML.initializationTenantXML(tenant);
-		WorkXML.initializationProductXML(rent);
+		DOMParserXML.initializationTenantXML(tenant);
+		DOMParserXML.initializationProductXML(rent);
 		
 		ConsolMenu menu = new ConsolMenu(addRent);
 		
