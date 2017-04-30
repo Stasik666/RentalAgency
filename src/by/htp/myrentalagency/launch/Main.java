@@ -4,7 +4,7 @@ import by.htp.myrentalagency.entity.Category;
 import by.htp.myrentalagency.entity.Tenant;
 import by.htp.myrentalagency.entity.accessories.*;
 import by.htp.myrentalagency.entity.equipment.*;
-import by.htp.myrentalagency.file.DOMParserXML;
+import by.htp.myrentalagency.file.DOMReaderXML;
 import by.htp.myrentalagency.list.RentList;
 import by.htp.myrentalagency.list.RentStation;
 import by.htp.myrentalagency.list.RentUnit;

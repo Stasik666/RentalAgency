@@ -24,7 +24,7 @@ import by.htp.myrentalagency.entity.equipment.Skies;
 import by.htp.myrentalagency.list.RentStation;
 import by.htp.myrentalagency.list.TenantList;
 
-public abstract class DOMParserXML {
+public abstract class DOMReaderXML {
 	
 	public static void initializationTenantXML(TenantList list){
 		 try {	
