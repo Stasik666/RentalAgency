@@ -18,6 +18,11 @@ public class Gloves extends Accessories{
 		this.setItemName("Gloves");
 	}
 
+	public Gloves() {
+		super();
+		this.setItemName("Gloves");
+	}
+
 	public double getSize() {
 		return size;
 	}

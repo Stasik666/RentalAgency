@@ -5,10 +5,10 @@ public abstract class Product {
 	private static int itemCount;
 	
 	private final int id;
+	private Category category;
 	private String title;
 	private double price;
 	private int year;
-	private Category category;
 	private  String itemType;
 	private  String itemName;
 	
@@ -20,6 +20,10 @@ public abstract class Product {
 		this.year = year;
 	}
 	
+	public Product() {
+		id=++itemCount;
+	}
+
 	public String getItemName() {
 		return itemName;
 	}

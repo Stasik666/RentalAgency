@@ -18,6 +18,11 @@ public class GlovesWinter extends Accessories{
 		this.setItemName("GlovesWinter");
 	}
 
+	public GlovesWinter() {
+		super();
+		this.setItemName("GlovesWinter");
+	}
+
 	public double getSize() {
 		return size;
 	}

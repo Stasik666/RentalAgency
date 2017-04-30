@@ -17,6 +17,11 @@ public abstract class Equipment extends Product{
 		this.setItemType("Equipment");
 	}
 
+	public Equipment() {
+		super();
+		this.setItemType("Equipment");
+	}
+
 	public double getWeight() {
 		return weight;
 	}

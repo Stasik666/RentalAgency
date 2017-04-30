@@ -18,6 +18,11 @@ public class Glasses extends Accessories{
 		this.setItemName("Glasses");
 	}
 
+	public Glasses() {
+		super();
+		this.setItemName("Glasses");
+	}
+
 	public String getType() {
 		return type;
 	}

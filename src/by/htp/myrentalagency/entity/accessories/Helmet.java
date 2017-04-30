@@ -21,6 +21,11 @@ public class Helmet extends Accessories{
 		this.setItemName("Helmet");
 	}
 
+	public Helmet() {
+		super();
+		this.setItemName("Helmet");
+	}
+
 	public double getSize() {
 		return size;
 	}

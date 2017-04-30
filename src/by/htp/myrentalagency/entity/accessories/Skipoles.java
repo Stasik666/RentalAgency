@@ -18,6 +18,11 @@ public class Skipoles extends Accessories{
 		this.setItemName("Skipoles");
 	}
 
+	public Skipoles() {
+		super();
+		this.setItemName("Skipoles");
+	}
+
 	public double getLenght() {
 		return length;
 	}

@@ -22,6 +22,11 @@ public class Bike extends Equipment{
 		this.setItemName("Bike");
 	}
 	
+	public Bike() {
+		super();
+		this.setItemName("Bike");
+	}
+
 	public String getType() {
 		return type;
 	}

@@ -22,6 +22,11 @@ public class Skies extends Equipment{
 		this.setItemName("Skies");
 	}
 	
+	public Skies() {
+		super();
+		this.setItemName("Skies");
+	}
+
 	public double getLenght() {
 		return length;
 	}

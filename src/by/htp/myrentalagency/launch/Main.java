@@ -32,7 +32,7 @@ public class Main {
 		//initialization from XML file(SAX)
 		
 		SAXReaderXML.initTenantXML(tenant);
-		//SAXReaderXML.initProductXML(rent);
+		SAXReaderXML.initProductXML(rent);
 		
 		ConsolMenu menu = new ConsolMenu(addRent);
 		

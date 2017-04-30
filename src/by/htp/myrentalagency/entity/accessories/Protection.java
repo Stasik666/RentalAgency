@@ -18,6 +18,11 @@ public class Protection extends Accessories{
 		this.setItemName("Protection");
 	}
 
+	public Protection() {
+		super();
+		this.setItemName("Protection");
+	}
+
 	public double getSize() {
 		return size;
 	}

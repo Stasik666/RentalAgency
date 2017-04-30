@@ -8,7 +8,9 @@ import org.xml.sax.SAXException;
 import org.xml.sax.XMLReader;
 import org.xml.sax.helpers.XMLReaderFactory;
 
+import by.htp.myrentalagency.entity.Product;
 import by.htp.myrentalagency.entity.Tenant;
+import by.htp.myrentalagency.list.RentStation;
 import by.htp.myrentalagency.list.TenantList;
 
 public abstract class SAXReaderXML {
@@ -23,8 +25,27 @@ public abstract class SAXReaderXML {
 			reader.parse(new InputSource("resourse/dataxml/TenantXML.xml"));
 			List<Tenant> tenantList = handler.getTenantList();
 			for (Tenant tenant : tenantList) {
-				System.out.println(tenant.getName());
 				list.add(tenant);
+			}
+			
+		} catch (SAXException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public static void initProductXML(RentStation list) {
+		
+		XMLReader reader;
+		try {
+			reader = XMLReaderFactory.createXMLReader();
+			ProductHandler handler = new ProductHandler();
+			reader.setContentHandler(handler);
+			reader.parse(new InputSource("resourse/dataxml/AvailableEquipmentXML.xml"));
+			List<Product> productList = handler.getProductList();
+			for (Product product : productList) {
+				list.add(product);
 			}
 			
 		} catch (SAXException e) {

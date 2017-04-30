@@ -22,6 +22,11 @@ public class Skate extends Equipment{
 		this.setItemName("Skate");
 	}
 	
+	public Skate() {
+		super();
+		this.setItemName("Skate");
+	}
+
 	public double getLength() {
 		return length;
 	}
