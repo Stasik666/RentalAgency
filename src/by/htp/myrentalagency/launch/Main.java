@@ -1,5 +1,7 @@
 package by.htp.myrentalagency.launch;
 
+import by.htp.myrentalagency.file.DOMReaderXML;
+import by.htp.myrentalagency.file.ReaderFile;
 import by.htp.myrentalagency.file.SAXReaderXML;
 import by.htp.myrentalagency.list.RentList;
 import by.htp.myrentalagency.list.RentStation;
@@ -19,29 +21,21 @@ public class Main {
 		
 		//initialization from XML file(DOM)
 		
-//		DOMReaderXML.initTenantXML(tenant);
-//		DOMReaderXML.initProductXML(rent);
-//		
-//		ConsolMenu menu = new ConsolMenu(addRent);
+//		DOMReaderXML.initTenant(tenant);
+//		DOMReaderXML.initProduct(rent);	
 		
 		
 		//initialization from XML file(SAX)
 		
-		SAXReaderXML.initTenantXML(tenant);
-		SAXReaderXML.initProductXML(rent);
-		
-		ConsolMenu menu = new ConsolMenu(addRent);
+		SAXReaderXML.initTenant(tenant);
+		SAXReaderXML.initProduct(rent);
 		
 		
-		/*initialization from file
+		//initialization from file
 		
-		String availableEquipment = "resourse/data/AvailableEquipment";
-		String clientData = "resourse/data/ClientData";
-		tenant.initializeListFromFile(clientData);
-		rent.initializeListFromFile(availableEquipment);
-		ConsolMenu menu = new ConsolMenu(addRent);
-		*/
-		
+//		ReaderFile.initTenant(tenant);
+//		ReaderFile.initProduct(rent);
+				
 		
 		// manual initialization
 		
@@ -70,7 +64,7 @@ public class Main {
 //		rent.add(new Skipoles(Category.SKIES,"Oscar",38.5,2017,1.4));
 //		rent.add(new Glasses(Category.SKIES,"Oscar",15.6,2017,"Open"));
 //		
-//		ConsolMenu menu = new ConsolMenu(addRent);
+		ConsolMenu menu = new ConsolMenu(addRent);
 			
 	}
 }

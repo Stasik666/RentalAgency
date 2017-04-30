@@ -15,7 +15,7 @@ import by.htp.myrentalagency.list.TenantList;
 
 public abstract class SAXReaderXML {
 		
-	public static void initTenantXML(TenantList list) {
+	public static void initTenant(TenantList list) {
 		
 		XMLReader reader;
 		try {
@@ -35,7 +35,7 @@ public abstract class SAXReaderXML {
 		}
 	}
 	
-	public static void initProductXML(RentStation list) {
+	public static void initProduct(RentStation list) {
 		
 		XMLReader reader;
 		try {

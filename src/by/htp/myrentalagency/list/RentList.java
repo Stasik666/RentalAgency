@@ -1,7 +1,6 @@
 package by.htp.myrentalagency.list;
 
 import by.htp.myrentalagency.entity.Rent;
-import by.htp.myrentalagency.logic.Lists;
 import by.htp.myrentalagency.menu.ConsolMenu;
 
 public class RentList implements Lists{

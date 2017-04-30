@@ -26,7 +26,7 @@ import by.htp.myrentalagency.list.TenantList;
 
 public abstract class DOMReaderXML {
 	
-	public static void initTenantXML(TenantList list){
+	public static void initTenant(TenantList list){
 		 try {	
 			 File inputFile = new File("resourse/dataxml/TenantXML.xml");
 	         DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
@@ -49,7 +49,7 @@ public abstract class DOMReaderXML {
 	     }
 	}
 	
-	public static void initProductXML(RentStation rent){
+	public static void initProduct(RentStation rent){
 		 try {	
 			 
 			 File inputFile = new File("resourse/dataxml/AvailableEquipmentXML.xml");

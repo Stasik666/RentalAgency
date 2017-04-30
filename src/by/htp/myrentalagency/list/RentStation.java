@@ -1,13 +1,6 @@
 package by.htp.myrentalagency.list;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
-
 import by.htp.myrentalagency.entity.*;
-import by.htp.myrentalagency.entity.equipment.*;
-import by.htp.myrentalagency.entity.accessories.*;
-import by.htp.myrentalagency.logic.Lists;
 import by.htp.myrentalagency.menu.ConsolMenu;
 
 public class RentStation implements Lists{
@@ -20,63 +13,6 @@ public class RentStation implements Lists{
 
 	public Product[] getUnits() {
 		return units;
-	}
-	
-	public void initProductFile(String path) {
-		BufferedReader readFromFile = null;
-		String line;
-		try {
-			readFromFile = new BufferedReader(new FileReader(path));
-			while ((line = readFromFile.readLine()) != null) {
-				String[] data = line.split(", ");
-				add(createNewProduct(data));
-			}
-		} catch (IOException e) {
-			e.printStackTrace();
-		} finally {
-			if (readFromFile != null)
-				try {
-					readFromFile.close();
-				} catch (IOException e) {
-					e.printStackTrace();
-				}
-		}
- 
-	}
-
-	private Product createNewProduct(String[] data){
-		Product newProduct = null;
-		switch (data[1]){
-		case "Glasses":
-			newProduct =  new Glasses(data);
-			break;
-		case "Gloves":
-			newProduct =  new Gloves(data);
-			break;
-		case "GlovesWinter":
-			newProduct =  new GlovesWinter(data);
-			break;
-		case "Helmet":
-			newProduct =  new Helmet(data);
-			break;
-		case "Protection":
-			newProduct =  new Protection(data);
-			break;
-		case "Skipoles":
-			newProduct =  new Skipoles(data);
-			break;
-		case "Bike":
-			newProduct =  new Bike(data);
-			break;
-		case "Skies":
-			newProduct =  new Skies(data);
-			break;
-		case "Skate":
-			newProduct =  new Skate(data);
-			break;
-			
-		}
-		return newProduct;
 	}
 	
 	public void add(Product units) {

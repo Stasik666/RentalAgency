@@ -1,11 +1,6 @@
 package by.htp.myrentalagency.list;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
-
 import by.htp.myrentalagency.entity.Tenant;
-import by.htp.myrentalagency.logic.Lists;
 import by.htp.myrentalagency.menu.ConsolMenu;
 
 public class TenantList implements Lists{
@@ -23,29 +18,6 @@ public class TenantList implements Lists{
 	
 	public void setTenantList(Tenant[] tenantList) {
 		this.tenantList = tenantList;
-	}
-	
-	public void initTenantFile(String path) {
-		
-		BufferedReader readFromFile = null;
-		String line;
-		try {
-			readFromFile = new BufferedReader(new FileReader(path));
-			while ((line = readFromFile.readLine()) != null) {
-				String[] data = line.split(", ");
-				add(new Tenant(data));
-			}
-		} catch (IOException e) {
-			e.printStackTrace();
-		} finally {
-			if (readFromFile != null)
-				try {
-					readFromFile.close();
-				} catch (IOException e) {
-					e.printStackTrace();
-				}
-		}
- 
 	}
 	
 	public  void add(Tenant newTenant) {  

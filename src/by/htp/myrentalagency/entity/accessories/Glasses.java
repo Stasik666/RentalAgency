@@ -8,7 +8,7 @@ public class Glasses extends Accessories{
 	
 	public Glasses(String[] data){
 		super(Category.valueOf(data[2]), data[4], Double.parseDouble(data[5]), Integer.parseInt(data[6]));
-		type = data[3];
+		type = data[7];
 		setItemName(data[1]);
 	}
 	
