@@ -1,22 +1,151 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema 
-xmlns:xs="http://www.w3.org/2001/XMLSchema"
+<schema 
+xmlns="http://www.w3.org/2001/XMLSchema"
 targetNamespace="http://www.myschema.by/TenantXMLSchema" 
-xmlns:xl="http://www.myschema.by/TenantXMLSchema"
+xmlns:tns="http://www.myschema.by/TenantXMLSchema"
 elementFormDefault="qualified">
 
-	<xs:element name="tenants">
-		<xs:complexType>
-			<xs:sequence>
-				<xs:element name="tenant" type="xl:Tenant"  maxOccurs="unbounded"/>
-			</xs:sequence>
-		</xs:complexType>
-	</xs:element>
-	<xs:complexType name="Tenant">			
-		<xs:sequence>
-			<xs:element name="name" type="xs:string"/>
-			<xs:element name="dateBirth" type="xs:string"/>
-			<xs:element name="address" type="xs:string"/>
-		</xs:sequence>
-	</xs:complexType>
-</xs:schema>
+	<element name="tenants">
+		<complexType>
+			<sequence>
+				<element name="tenant" type="tns:Tenant"  maxOccurs="unbounded"/>
+			</sequence>
+		</complexType>
+	</element>
+	<complexType name="Tenant">			
+		<sequence>
+			<element name="name" type="string"/>
+			<element name="dateBirth" type="string"/>
+			<element name="address" type="string"/>
+		</sequence>
+		
+	</complexType>
+	<element name="product" type="tns:ProductType" abstract="true"></element>
+	<element name="accessories" type="tns:AccessoriesType" abstract="true" substitutionGroup="tns:product"></element>
+	<element name="equipment" type="tns:EquipmentType" abstract="true" substitutionGroup="tns:product"></element>
+	<element name="bike" type="tns:BikeType" substitutionGroup="tns:product"></element>
+	<element name="skate" type="tns:SkateType" substitutionGroup="tns:product"></element>
+	<element name="skies" type="tns:SkiesType" substitutionGroup="tns:product"></element>
+	<element name="glasses" type="tns:GlassesType" substitutionGroup="tns:product"></element>
+	<element name="gloves" type="tns:GlovesType" substitutionGroup="tns:product"></element>
+	<element name="gloveswinter" type="tns:GlovesWinterType" substitutionGroup="tns:product"></element>
+	<element name="helmet" type="tns:HelmetType" substitutionGroup="tns:product"></element>
+	<element name="protection" type="tns:ProtectionType" substitutionGroup="tns:product"></element>
+	<element name="skipoles" type="tns:SkipolesType" substitutionGroup="tns:product"></element>
+	
+	<complexType name="ProductType">
+		<sequence>
+				<element name="category" type="tns:category" />
+				<element name="title" type="string" />
+				<element name="price" type="double" />
+				<element name="year" type="int" />
+		</sequence>
+	</complexType>
+	<simpleType name="category">
+		<restriction base="string">
+			<enumeration value="BICYCLING"/>
+			<enumeration value="SKIES"/>
+			<enumeration value="SKATES"/>
+			<enumeration value="SKATES_BICYCLING"/>
+		</restriction>
+	</simpleType>
+	<complexType name="EquipmentType">
+		<complexContent>
+			<extension base="tns:ProductType">
+				<sequence>
+					<element name="weight" type="double"/>
+					<element name="color" type="string"/>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="AccessoriesType">
+		<complexContent>
+			<extension base="tns:ProductType">
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="BikeType">
+		<complexContent>
+			<extension base="tns:EquipmentType">
+				<sequence>
+					<element name="type" type="string"/>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="SkateType">
+		<complexContent>
+			<extension base="tns:EquipmentType">
+				<sequence>
+					<element name="length" type="double"/>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="SkiesType">
+		<complexContent>
+			<extension base="tns:EquipmentType">
+				<sequence>
+					<element name="length" type="double"/>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="GlassesType">
+		<complexContent>
+			<extension base="tns:AccessoriesType">
+				<sequence>
+					<element name="type" type="string"/>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="GlovesType">
+		<complexContent>
+			<extension base="tns:AccessoriesType">
+				<sequence>
+					<element name="size" type="double"/>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="GlovesWinterType">
+		<complexContent>
+			<extension base="tns:AccessoriesType">
+				<sequence>
+					<element name="size" type="double"/>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="HelmetType">
+		<complexContent>
+			<extension base="tns:AccessoriesType">
+				<sequence>
+					<element name="size" type="double"/>
+					<element name="color" type="string"/>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="ProtectionType">
+		<complexContent>
+			<extension base="tns:AccessoriesType">
+				<sequence>
+					<element name="size" type="double"/>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="SkipolesType">
+		<complexContent>
+			<extension base="tns:AccessoriesType">
+				<sequence>
+					<element name="length" type="double"/>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	
+</schema>
